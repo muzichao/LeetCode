@@ -44,7 +44,7 @@ int divide(int dividend, int divisor)
 
 /**
  * 不用除法，乘法，取余，求两个int数的商
- * 1. 用左移操作乘2，找到除数的区间[2^(n-1), 2^n]
+ * 1. 用左移操作乘2，找到商的区间[2^(n-1), 2^n]
  * 2. 用二分法查找
  * @param  dividend [除数]
  * @param  divisor  [被除数]
