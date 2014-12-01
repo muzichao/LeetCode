@@ -46,7 +46,7 @@ int findMinOpt(vector<int> &num)
         num[iMid] > num[iLeft] ? iLeft = iMid : iRight = iMid;
 
         if (iLeft == iRight || iLeft == iRight - 1)
-            // return min(num[iLeft], num[iRight]);
+            return min(num[iLeft], num[iRight]);
     }
 }
 
