@@ -7,22 +7,28 @@
 #### 示例
 
 输入：`(a[bc]de{fab})`
+
 输出：`true`
 
 输入：`()`
+
 输出：`true`
 
 输入：`abcd`
+
 输出：`true`
 
 输入：`(abd]`
+
 输出：`false`
 
 
 输入：`(abd]`
+
 输出：`false`
 
 输入：`[dbd(abd]eg)`
+
 输出：`false`
 
 #### 流程
