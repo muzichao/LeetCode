@@ -24,9 +24,9 @@ double findKth(int a[], int m, int b[], int n, int k)
     int pa = min(k / 2, m);
     int pb = k - pa;
     if (a[pa - 1] < b[pb - 1]) // a中所有值必定都小于第k小的数
-        return findKth(a + pa, m - pa, b, pb, k - pa);
+        return findKth(a + pa, m - pa, b, pb, pb);
     else if (a[pa - 1] > b[pb - 1]) // b中所有值必定小于第k小的数
-        return findKth(a, m, b + pb, n - pb, k - pb);
+        return findKth(a, pa, b + pb, n - pb, pa);
     else
         return a[pa - 1];
 }
